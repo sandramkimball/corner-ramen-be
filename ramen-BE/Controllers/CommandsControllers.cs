@@ -9,7 +9,7 @@ namespace ramen_BE.Controllers
     {
         public ActionResult<IEnumerable<string>> GetString()
         {
-            return new string[]{"this", "is", "hardcoded"}
+            return new string[]{"this", "is", "string"};
         }
     }
 }

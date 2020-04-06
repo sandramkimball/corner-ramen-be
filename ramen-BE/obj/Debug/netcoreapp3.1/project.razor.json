@@ -20518,7 +20518,7 @@
     ],
     "CSharpLanguageVersion": 800
   },
-  "RootNamespace": "ramen_BE",
+  "RootNamespace": null,
   "Documents": [],
   "SerializationFormat": "0.2"
 }
