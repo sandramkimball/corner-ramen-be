@@ -22,8 +22,8 @@ namespace ramen_BE
         }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<CommandContext>
-                (opt => opt.UseSqlServer(Configuration["Data:CommandApiConnection:ConnectionString"]));
+            services.AddDbContext<ProductContext>
+                (opt => opt.UseSqlServer(Configuration["Data:ProductApiConnection:ConnectionString"]));
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }

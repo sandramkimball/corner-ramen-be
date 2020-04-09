@@ -19,7 +19,6 @@ C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen-be\ramen-BE\obj\Debug\netco
 C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen-be\ramen-BE\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen-be\ramen-BE\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen-be\ramen-BE\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen-be\ramen-BE\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
 C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen-be\ramen-BE\obj\Debug\netcoreapp3.1\ramen-BE.csproj.CopyComplete
 C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen-be\ramen-BE\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Sandra\Documents\SIDE PROJECTS\corner-ramen-be\ramen-BE\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
