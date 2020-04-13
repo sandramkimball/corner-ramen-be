@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using ramen_BE.Models;
 
-namespace ramen_BE.Models
+namespace ramen_BE.Data
 {
     public class ProductContext : DbContext
     {
@@ -8,7 +9,7 @@ namespace ramen_BE.Models
         {
 
         }
-        
-        public DbSet<Product> ProductItems {get; set;}
+
+        public DbSet<Product> Product { get; set; }
     }
 }

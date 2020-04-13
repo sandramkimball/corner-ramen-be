@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using ramen_BE.Models;
+using ramen_BE.Data;
 
 namespace ramen_BE
 {
@@ -23,7 +24,8 @@ namespace ramen_BE
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ProductContext>
-                (opt => opt.UseSqlServer(Configuration["Data:ProductApiConnection:ConnectionString"]));
+                (opt => opt.UseSqlServer(Configuration["ProductContext"]));
+                // (opt => opt.UseSqlServer(Configuration["Data:ProductApiConnection:ConnectionString"]));
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
