@@ -18,36 +18,36 @@ namespace ramen_BE.Controllers
             _context.Product
         );
 
-        [HttpGet("products/id")] 
-        public ActionResult<Product> Get(int id) 
-        { 
-            var product = db.ProductItems.Find(id); 
+        // [HttpGet("products/id")] 
+        // public ActionResult<Product> Get(int id) 
+        // { 
+        //     var product = ProductCon.Find(id); 
 
-            if (product == null) 
-            { 
-                return NotFound(); 
-            } 
+        //     if (product == null) 
+        //     { 
+        //         return NotFound(); 
+        //     } 
 
-            return product; 
-        } 
+        //     return product; 
+        // } 
 
         public string Index()
         {
             return "Where are the noodles?";
         }
 
-        [HttpPut("products")] 
-        public ActionResult<Product> Putt(int id) 
-        { 
-            var product = db.ProductItems.Insert(id); 
+        // [HttpPut("products")] 
+        // public ActionResult<Product> Put(int id) 
+        // { 
+        //     var product = db.ProductItems.Insert(id); 
 
-            if (product == null) 
-            { 
-                return NotFound(); 
-            } 
+        //     if (product == null) 
+        //     { 
+        //         return NotFound(); 
+        //     } 
 
-            return product; 
-        } 
+        //     return product; 
+        // } 
         
     }
 }

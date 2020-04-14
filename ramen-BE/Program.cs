@@ -19,7 +19,7 @@ namespace ramen_BE
             CreateHostBuilder(args).Build().Run();
             var host = CreateHostBuilder(args).Build();
 
-            using (var scope = host.Services.CeateScope())
+            using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
                 try 
@@ -28,7 +28,7 @@ namespace ramen_BE
                 }
                 catch (Exception ex)
                 { 
-                    var logger = services.GetRequiredServices<ILogger<Program>>();
+                    var logger = services.GetRequiredService<ILogger<Program>>();
                     logger.LogError(ex, "An error has occured.");
                 }
             }

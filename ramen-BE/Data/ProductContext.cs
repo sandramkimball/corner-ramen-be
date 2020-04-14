@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ramen_BE.Models;
+using ramen_BE.Data;
 
 namespace ramen_BE.Data
 {
