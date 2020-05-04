@@ -13,41 +13,31 @@ namespace ramen_BE.Controllers
 
         public ProductController(ProductContext context) => _context = context;
         
+       
+
         [HttpGet]
         public ActionResult<IEnumerable<Product>> GetProducts() => (
             _context.Product
         );
 
-        // [HttpGet("products/id")] 
-        // public ActionResult<Product> Get(int id) 
-        // { 
-        //     var product = ProductCon.Find(id); 
+        [HttpGet] 
+        public Product FindProduct(int id) 
+        { 
+            var product = _context.Product.Find(id); 
 
-        //     if (product == null) 
-        //     { 
-        //         return NotFound(); 
-        //     } 
+            if (product == null) 
+            { 
+               throw new System.ArgumentException("Product not Found");;
+            } 
 
-        //     return product; 
-        // } 
+            return product; 
+        } 
 
         public string Index()
         {
-            return "Where are the noodles?";
+            return "Where are my noodles?";
         }
 
-        // [HttpPut("products")] 
-        // public ActionResult<Product> Put(int id) 
-        // { 
-        //     var product = db.ProductItems.Insert(id); 
-
-        //     if (product == null) 
-        //     { 
-        //         return NotFound(); 
-        //     } 
-
-        //     return product; 
-        // } 
         
     }
 }

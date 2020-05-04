@@ -21,7 +21,8 @@ namespace ramen_BE.Models
                     return;   // DB has been seeded
                 }
 
-                context.Product.AddRange(
+                context.Product.AddRange( 
+                    // Id, Name, Desc., ProductType, ProductImage, Price
                     new Product
                     {
                         ProductType = "Ramen",

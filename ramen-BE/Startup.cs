@@ -23,6 +23,7 @@ namespace ramen_BE
         }
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddDbContext<ProductContext>
                 (opt => opt.UseSqlServer(Configuration["ProductContext"]));
                 // (opt => opt.UseSqlServer(Configuration["Data:ProductApiConnection:ConnectionString"]));
@@ -33,7 +34,19 @@ namespace ramen_BE
         // Thi
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseMvc();
+            
+            app.UseMvc();app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseRouting();
+
+            app.UseCors();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
             
         }
     }
